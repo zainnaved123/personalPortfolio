@@ -1,0 +1,73 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Dark blue background */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
+    border-radius: 30px; /* Rounded corners */
+    max-width: 98%;
+    margin-top: 10px; /* Adjust this value to create the desired space from the top */
+    margin-bottom: 0px; /* Optional: if you also want space at the bottom */
+    margin-left: auto; /* Center the navbar horizontally */
+    margin-right: auto; /* Center the navbar horizontally */
+    position: sticky;
+    top: 0; /* Set the top position to align with the top of the viewport */
+    z-index: 1020; /* Ensure navbar is above other content; adjust value if needed */
+  }
+  
+  
+
+  .nav-link.active {
+    color: #a9a9a9 !important; /* This should be the same color as your hover state */
+  }
+  
+  /* Center the contents of Navbar.Collapse */
+  .navbar-collapse {
+    justify-content: center !important;
+  }
+  
+  /* Ensure links are centered within the Navbar */
+  .navbar-nav {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Navbar brand and link enhancements for better visibility and aesthetics */
+  .navbar-brand, .nav-link {
+    color: #d3d3d3 !important; /* Light grey color for text */
+    transition: color 0.2s; /* Smooth transition for hover effects */
+  }
+  
+  .navbar-brand:hover, .nav-link:hover {
+    color: #a9a9a9 !important; /* Slightly darker grey on hover for interaction feedback */
+  }
+  
+  /* Dropdown menu styling for consistency and readability */
+  .nav-dropdown .dropdown-menu {
+    text-align: center;
+    background-color: #004d90; /* Dark blue background consistent with navbar */
+    border: 0; /* Remove default border */
+    box-shadow: 0 2px 10px rgba(0,0,0,.1); /* Add shadow for depth */
+  }
+  
+  .nav-dropdown .nav-dropdown-item {
+    color: #d3d3d3; /* Light grey color consistent with navbar links */
+  }
+  
+  .nav-dropdown .nav-dropdown-item:hover {
+    background-color: #00376e; /* A slightly darker blue for hover background */
+    color: #ffffff; /* Change text color to white for better contrast */
+  }
+  
+  /* Adjustments for the toggle button in collapsed mode */
+  .navbar-toggle {
+    border-color: #007bff; /* Adjust if needed to fit the dark blue theme */
+  }
+  
+  /* Enhance the container to ensure proper alignment and spacing */
+  .container {
+    max-width: 95%;
+    margin: 0 auto; /* Center the navbar container */
+  }
+  

@@ -1,0 +1,18 @@
+body {
+  background-color: #4d4d4d; /* Light grey background */
+  margin: 0; /* Removes default margin */
+  font-family: Arial, sans-serif;
+}
+
+.welcome-section {
+  text-align: left;
+  padding: 60px 20px;
+}
+
+.welcome-section h1 {
+  color: aliceblue;
+}
+
+.welcome-section h2 {
+  color: aliceblue;
+}

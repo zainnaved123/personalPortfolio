@@ -1,0 +1,27 @@
+/* Footer.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Changed from sticky to fixed */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the footer is above other content */
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Only underline on hover for better UI */
+}
+
+.footer a2 {
+    color: #fff;
+    text-decoration: none; /* Updated to remove underline by default */
+    margin: 0 70px; /* Adds horizontal spacing between icons */
+}
+
