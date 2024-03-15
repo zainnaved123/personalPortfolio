@@ -18,14 +18,18 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <NavbarSimple />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="resume" element={<Resume />} />
-        <Route path="about-me" element={<AboutMe />} />
-      </Routes>
+      <div className="d-flex flex-column min-vh-100">
+        <div className="container flex-grow-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="resume" element={<Resume />} />
+            <Route path="about-me" element={<AboutMe />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
-    <Footer/>
 
   </React.StrictMode>
 );

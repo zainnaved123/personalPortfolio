@@ -5,14 +5,55 @@ body {
 }
 
 .welcome-section {
-  text-align: left;
   padding: 60px 20px;
+}
+
+/* Typewriter effect animation */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blinkCursor {
+  from { border-right-color: aliceblue; }
+  to { border-right-color: transparent; }
 }
 
 .welcome-section h1 {
   color: aliceblue;
+  overflow: hidden; /* Ensures the content is not displayed outside its box */
+  border-right: .15em solid aliceblue; /* Simulates the cursor */
+  white-space: nowrap; /* Keeps the text in a single line */
+  margin: 0 left; /* Centers the text */
+  letter-spacing: .06em; /* Adjusts the spacing between letters */
+  animation: 
+    typewriter 4s steps(40, end) 1s 1 normal both,
+    blinkCursor 500ms steps(40, end) infinite;
 }
 
-.welcome-section h2 {
-  color: aliceblue;
+.hero-section {
+  display: flex;
+  align-items: flex-start; /* Ensures content is aligned at the top */
+  justify-content: space-between; /* Spaces between the text block and image */
+  padding: 20px;
+}
+
+.text-container {
+  flex: 1; /* Text container takes up available space */
+  margin-right: 20px; /* Space between text and image */
+}
+
+.text-container h1, .text-container h2 {
+  margin: 0 0 10px; /* Zero margin at the top for h1, adds bottom margin for spacing between h1 and h2 */
+}
+
+.hero-section h2 {
+  padding-top: 20px;
+}
+
+.homeImage {
+  flex: 0 1 auto; /* Allows the image to shrink but not grow, auto basis */
+  width: auto; /* Width auto for responsive behavior */
+  max-width: 40%; /* Limits the image's max width to 40% of its container */
+  height: auto; /* Maintains aspect ratio */
 }

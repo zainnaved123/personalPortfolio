@@ -1,0 +1,18 @@
+/* Resume.css */
+.resume-container {
+    text-align: center;
+  }
+  
+  .resume-image {
+    max-width: 50%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px; /* Add some space between the image and the download link */
+  }
+  
+  .resume-download-link {
+    /* Style for your download link if needed */
+    display: inline-block; 
+    margin-top: 20px; 
+    text-decoration: none;  
+  }
