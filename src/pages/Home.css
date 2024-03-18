@@ -4,38 +4,19 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.welcome-section {
-  padding: 60px 20px;
-}
-
-/* Typewriter effect animation */
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blinkCursor {
-  from { border-right-color: aliceblue; }
-  to { border-right-color: transparent; }
-}
-
-.welcome-section h1 {
-  color: aliceblue;
-  overflow: hidden; /* Ensures the content is not displayed outside its box */
-  border-right: .15em solid aliceblue; /* Simulates the cursor */
-  white-space: nowrap; /* Keeps the text in a single line */
-  margin: 0 left; /* Centers the text */
-  letter-spacing: .06em; /* Adjusts the spacing between letters */
-  animation: 
-    typewriter 4s steps(40, end) 1s 1 normal both,
-    blinkCursor 500ms steps(40, end) infinite;
-}
-
 .hero-section {
   display: flex;
-  align-items: flex-start; /* Ensures content is aligned at the top */
-  justify-content: space-between; /* Spaces between the text block and image */
+  flex-direction: row; /* Default layout */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
 }
 
 .text-container {
@@ -47,13 +28,81 @@ body {
   margin: 0 0 10px; /* Zero margin at the top for h1, adds bottom margin for spacing between h1 and h2 */
 }
 
+.text-container h1 {
+  position: relative;
+  color: white;
+  font: 700 normal 2.5em 'Tahoma';
+  overflow: hidden; /* Ensures the pseudo-element's animation doesn't go outside the text bounds */
+}
+
+.text-container h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start from the left */
+  width: 100%;
+  height: 100%;
+  background-color: #333; /* Match the body's background for a revealing effect */
+  animation: revealText 3s ease forwards;
+}
+
+@keyframes revealText {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
 .hero-section h2 {
   padding-top: 20px;
 }
 
+.type-writer {
+  margin: auto;
+  color: white;
+  font: 700 normal 2.5em 'tahoma';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
 .homeImage {
-  flex: 0 1 auto; /* Allows the image to shrink but not grow, auto basis */
-  width: auto; /* Width auto for responsive behavior */
-  max-width: 40%; /* Limits the image's max width to 40% of its container */
+  width: 100%; /* Full width of its parent container */
+  max-width: 600px; /* Maximum width to ensure it doesn't get too large */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add space between text and image on smaller screens */
+}
+
+.about-me {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-me h1 {
+  text-align: center; /* Ensures the title is centered */
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns items at the start, allowing for variable size content */
+  flex-wrap: wrap; /* Allows content to wrap if necessary */
+}
+
+.about-content h2 {
+  font-size: 30px; /* Smaller text size for h2, adjust as necessary */
+  max-width: 45%; /* Adjust the width to make room for the larger images grid */
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Keeps a 3x3 grid */
+  gap: 20px; /* Increases the gap for better spacing with larger images */
+  width: 50%; /* Adjust width to your preference */
+  max-width: 600px; /* Increases max-width to allow larger images */
+}
+
+.images-grid img {
+  width: 100%; /* Ensures images fill their cells */
   height: auto; /* Maintains aspect ratio */
 }
