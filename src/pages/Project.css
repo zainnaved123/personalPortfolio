@@ -1,0 +1,47 @@
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: adds a border around each project */
+    margin-top: 10px;
+  }
+  
+  .project-info {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .github-link {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007bff; /* GitHub blue, adjust as needed */
+  }
+  
+  .project-description {
+    margin: 0;
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .project {
+      flex-direction: column;
+    }
+  
+    .project-info {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  
+    .project-image {
+      width: 100%;
+    }
+  }

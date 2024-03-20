@@ -1,3 +1,10 @@
+body {
+  background-color: #4d4d4d; /* Light grey background */
+  margin: 0; /* Removes default margin */
+  font-family: Arial, sans-serif;
+}
+
+
 .d-flex {
   display: flex;
   flex-direction: column;
