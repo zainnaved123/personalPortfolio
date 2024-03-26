@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavbarSimple from './components/NavbarSimple';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import Projects from './pages/ProjectPage/Projects';
 import Resume from './pages/Resume';
 import Footer from './components/Footer';
 import './index.css';

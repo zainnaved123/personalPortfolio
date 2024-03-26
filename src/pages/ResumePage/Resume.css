@@ -1,0 +1,61 @@
+/* Resume.css */
+.resume-container {
+    text-align: center;
+  }
+  
+  .resume-download-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #007bff; /* Example background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding for better sizing */
+    margin-bottom: 30px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .resume-download-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+
+  .experience-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding-bottom: 30px;
+  }
+  
+  .experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split info and logos equally */
+    gap: 20px; /* Adjust according to preference */
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+  }
+  
+  .experience-info h2 {
+    margin-top: 0;
+  }
+  
+  .company-logo {
+    width: 100%; /* Adjust as needed */
+    max-width: 280px; /* Adjust as needed */
+    margin-bottom: 20px; /* Space between company logo and tech logos grid */
+  }
+  
+  .tech-logos-grid img {
+    width: auto; /* Keep the original aspect ratio */
+    height: 50px; /* Example fixed height to make logos smaller */
+    max-width: 100%; /* Ensure logos do not overflow their grid area */
+  }
+  
+  /* Add media query for smaller screens */
+  @media (max-width: 768px) {
+    .experience {
+      grid-template-columns: 1fr; /* Stack info and logos on smaller screens */
+    }
+  }
+  

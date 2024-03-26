@@ -1,0 +1,67 @@
+.project {
+  display: flex;
+  align-items: flex-start; /* Adjust alignment */
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+  
+  .project-info {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .project-right {
+    flex: 1; /* Adjust based on your layout needs */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center logos and image */
+  }
+  
+  .github-link {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007bff; /* GitHub blue, adjust as needed */
+  }
+  
+  .project-description {
+    margin: 0;
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .project {
+      flex-direction: column;
+    }
+  
+    .project-info, .project-right {
+      width: 100%; /* Ensure full width on smaller screens */
+    }
+  
+    .project-image img {
+      max-width: 100%; /* Full width images on smaller screens */
+    }
+  }
+
+  .logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); /* Creates a responsive grid for logos */
+    gap: 10px;
+    width: 100%; /* Ensure grid takes full width of its container */
+  }
+
+  .logos-grid img {
+    max-width: 100%; /* Ensures logos scale within their cell without exceeding it */
+    height: auto; /* Maintains the aspect ratio of the logos */
+    max-height: 80px; /* Decrease this value to make logos smaller */
+  }

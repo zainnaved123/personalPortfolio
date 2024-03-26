@@ -102,3 +102,27 @@
   width: 100%; /* Ensures images fill their cells */
   height: auto; /* Maintains aspect ratio */
 }
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dynamic classes for animation delay */
+.images-grid img {
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+/* Example delay classes, you can create more if needed */
+.fade-in-delay-1 { animation-delay: 0.5s; }
+.fade-in-delay-2 { animation-delay: 1s; }
+.fade-in-delay-3 { animation-delay: 1.5s; }
+.fade-in-delay-4 { animation-delay: 2s; }
