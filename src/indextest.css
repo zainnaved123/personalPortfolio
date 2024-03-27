@@ -3,7 +3,7 @@ body {
     margin: 0; /* Removes default margin */
     font-family: Arial, sans-serif;
   }
-  /* 
+  
   .starry-sky {
     position: fixed;
     top: 0;
@@ -47,7 +47,7 @@ body {
       opacity: 0.2;
     }
   }
-   */
+
   
   
   .d-flex {

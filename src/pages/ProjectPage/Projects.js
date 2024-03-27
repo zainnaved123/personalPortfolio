@@ -41,7 +41,7 @@ function Projects() {
           <h1>Personal Portfolio</h1>
           <a href="https://github.com/zainnaved123/personalPortfolio" target="_blank" rel="noopener noreferrer" class="github-link" >View on GitHub</a>
           <p class="project-description">This project is a web application that allows users to track their daily tasks and manage their time more efficiently. Built with React and Node.js.</p>
-          <NavLink to="/" className="app-link">Live APP</NavLink>
+          <NavLink to="/" className="github-link">Live APP</NavLink>
         </div>
         <div className="project-right">
           <div className="logos-grid">
@@ -101,9 +101,9 @@ function Projects() {
           <h1>Langportal</h1>
           <a href="https://github.com/BlueStarBurst/LangPortal?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="github-link" >View on GitHub</a>
           <p class="project-description">This project is a web application that allows users to track their daily tasks and manage their time more efficiently. Built with React and Node.js.</p>
-          <a href="https://hargreaves.dev/LangPortal/" target="_blank" rel="noopener noreferrer" class="app-link" >Live APP</a>
+          <a href="https://hargreaves.dev/LangPortal/" target="_blank" rel="noopener noreferrer" class="github-link" >Live APP</a>
           <br></br>
-          <a href="https://huggingface.co/zainnaved/marian-finetuned-kde4-en-to-es?text=My+name+is+Wolfgang+and+I+live+in+Berlin" target="_blank" rel="noopener noreferrer" class="app-link" >Open Source NLP Model</a>
+          <a href="https://huggingface.co/zainnaved/marian-finetuned-kde4-en-to-es?text=My+name+is+Wolfgang+and+I+live+in+Berlin" target="_blank" rel="noopener noreferrer" class="github-link" >Open Source NLP Model</a>
         </div>
         <div className="project-right">
           <div class="project-image">

@@ -32,8 +32,8 @@
     grid-template-columns: 1fr 1fr; /* Split info and logos equally */
     gap: 20px; /* Adjust according to preference */
     align-items: center;
-    border: 1px solid #ffffff;
     border-radius: 30px;
+    background-color: #4d4d4d;
   }
   
   .experience-info h2 {

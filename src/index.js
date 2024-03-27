@@ -13,10 +13,25 @@ import Resume from './pages/ResumePage/Resume';
 import Footer from './components/Footer'
 import './index.css'
 
+const generateStars = (count) => {
+  let stars = [];
+  for (let i = 0; i < count; i++) {
+    const style = {
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      transform: `scale(${Math.random()})`,
+      animationDelay: `${Math.random() * 2}s`
+    };
+    stars.push(<div key={i} className="star" style={style}></div>);
+  }
+  return stars;
+};
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <div className="starry-sky">{generateStars(200)} </div>
       <NavbarSimple />
       <div className="d-flex flex-column min-vh-100">
         <div className="container flex-grow-1">

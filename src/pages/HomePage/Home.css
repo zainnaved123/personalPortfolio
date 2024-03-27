@@ -126,3 +126,49 @@
 .fade-in-delay-2 { animation-delay: 1s; }
 .fade-in-delay-3 { animation-delay: 1.5s; }
 .fade-in-delay-4 { animation-delay: 2s; }
+
+/* Spotify Recently Played Section */
+.spotify-recently-played {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.spotify-recently-played h1 {
+  color: #1DB954; /* Spotify's brand color */
+  margin-bottom: 20px;
+}
+
+.recent-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  border: 2px solid #1DB954; /* Spotify's brand color */
+  border-radius: 10px;
+  background-color: #f0f0f0; /* Light background for the section */
+}
+
+.track-image {
+  width: 100px; /* Adjust the size as needed */
+  border-radius: 5px;
+}
+
+.track-info p {
+  margin: 5px 0;
+  color: #333; /* Dark text color for contrast */
+}
+
+.spotify-icon {
+  width: 40px; /* Adjust the size as needed */
+}
+
+@media (max-width: 600px) {
+  .recent-track {
+    flex-direction: column;
+  }
+
+  .track-info {
+    text-align: center;
+  }
+}

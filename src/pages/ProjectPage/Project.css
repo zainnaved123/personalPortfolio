@@ -4,8 +4,8 @@
   justify-content: space-between;
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ffffff;
   border-radius: 30px;
+  background-color: #4d4d4d;
   margin-top: 10px;
 }
   
@@ -22,11 +22,18 @@
   }
   
   .github-link {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 20px;
     text-decoration: none;
-    color: #007bff; /* GitHub blue, adjust as needed */
+    background-color: #007bff; /* Example background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding for better sizing */
+    margin-bottom: 30px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */ /* GitHub blue, adjust as needed */
+  }
+  .github-link:hover{
+    background-color: #0056b3; /* Darker shade on hover */
   }
   
   .project-description {
